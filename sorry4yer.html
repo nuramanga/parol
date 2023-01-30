@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      button {
+        border-radius: 40px;
+        padding: 10px 15px;
+        background-color: #fff;
+        color: #333;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      function redirect() {
+        var password = "friday";
+        var input = document.getElementById("password").value;
+        if (input === password) {
+          window.location.href = "https://a17304.creatium.site/";
+        } else {
+          alert("Ключ не подошел((");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2>Это для тебя?</h2>
+      <input type="password" id="password">
+      <button onclick="redirect()">Открыть</button>
+      <p>Ключ у твоей лучшей подруги</p>
+    </div>
+  </body>
+</html>
